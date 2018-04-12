@@ -6,6 +6,7 @@ import requests
 import sonar
 import faceDetect
 
+faceDetect.setup()
 #Sets up board for reading in the from the camera
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
@@ -13,7 +14,8 @@ camera = picamera.PiCamera()
 
 #Sets up paths
 requests.packages.urllib3.disable_warnings()
-
+face = 'FaceSensor/face'
+count = 1
 
 while True:
     distance = sonar.sonar()
@@ -36,7 +38,7 @@ while True:
         locFace = locFace + '.jpg'
         print("Intruder detected")
         camera.capture(locFace)
-        faceDetect.auth(locface)
+        faceDetect.auth(locFace)
         time.sleep(5)
      
 

@@ -3,7 +3,7 @@ import requests
 import cognitive_face as CF
 
 def setup():
-  key = 'f37f3debd907479cbf0d503f5f059214'  # Replace with a valid Subscription Key here.
+  key = ''  # Replace with a valid Subscription Key here.
   CF.Key.set(key)
   base_url = 'https://eastus.api.cognitive.microsoft.com/face/v1.0/'  # Replace with your regional Base URL
   CF.BaseUrl.set(base_url)
