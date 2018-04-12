@@ -43,18 +43,5 @@ while True:
      
 
 
-img_urls = [
-    'https://www.barnett-waddingham.co.uk/media/thumbnail/ca/ca/cacac3935e9b2cf046c0db71729ed1b8/jade-taylor.jpg',
-    'https://st2.depositphotos.com/3752845/8411/i/950/depositphotos_84116536-stock-photo-jade-taylor-actress.jpg']
 
-#faces = [CF.face.detect(img_url) for img_url in img_urls]
-
-# Assume that each URL has at least one face, and that you're comparing the first face in each URL
-# If not, adjust the indices accordingly.
-#similarity = CF.face.verify(faces[0][0]['faceId'], faces[1][0]['faceId'])
-#print(similarity.get('isIdentical'))
-#if(similarity.get('isIdentical')):
-#    print('Hello Authorized user')
-#else:
-#    print('Unauthorized User')
 
